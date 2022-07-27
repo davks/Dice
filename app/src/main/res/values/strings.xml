@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_d6">Dice 6 side</string>
+    <string name="choose_d12">Dice 12 side</string>
+    <string name="choose_d20">Dice 20 side</string>
+    <string name="dice">Dice</string>
+    <string name="start">Start</string>
+</resources>
