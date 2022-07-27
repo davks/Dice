@@ -64,5 +64,15 @@ class DiceFragment : Fragment() {
             diceViewModel.typeOfDice = TypeOfDice.TWENTY
             diceViewModel.startRoll()
         }
+
+        binding.chooseOR6.setOnClickListener {
+            diceViewModel.typeOfDice = TypeOfDice.OR_SIX
+            diceViewModel.startRoll()
+        }
+
+        binding.chooseOR12.setOnClickListener {
+            diceViewModel.typeOfDice = TypeOfDice.OR_TWELVE
+            diceViewModel.startRoll()
+        }
     }
 }

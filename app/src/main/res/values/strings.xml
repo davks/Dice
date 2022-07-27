@@ -7,4 +7,6 @@
     <string name="choose_d20">Dice 20 side</string>
     <string name="dice">Dice</string>
     <string name="start">Start</string>
+    <string name="dice_or_6">Dice OR 6</string>
+    <string name="dice_or_12">Dice OR 12</string>
 </resources>

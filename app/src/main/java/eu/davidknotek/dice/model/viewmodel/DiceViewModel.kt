@@ -41,6 +41,8 @@ class DiceViewModel(application: Application): AndroidViewModel(application) {
             TypeOfDice.SIX -> getSixRollImage(number)
             TypeOfDice.TWELVE -> getTwelveRollImage(number)
             TypeOfDice.TWENTY -> getTwentyRollImage(number)
+            TypeOfDice.OR_SIX -> getOrSixRollImage(number)
+            TypeOfDice.OR_TWELVE -> getOrTwelveRollImage(number)
         }
     }
 
@@ -73,6 +75,8 @@ class DiceViewModel(application: Application): AndroidViewModel(application) {
             TypeOfDice.SIX -> 6
             TypeOfDice.TWELVE -> 12
             TypeOfDice.TWENTY -> 20
+            TypeOfDice.OR_SIX -> 6
+            TypeOfDice.OR_TWELVE -> 12
         }
     }
 
@@ -126,6 +130,34 @@ class DiceViewModel(application: Application): AndroidViewModel(application) {
             18 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.d20_18)
             19 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.d20_19)
             else -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.d20_20)
+        }
+    }
+
+    private fun getOrSixRollImage(number: Int): Drawable? {
+        return when (number) {
+            1 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or6_1)
+            2 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or6_2)
+            3 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or6_3)
+            4 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or6_4)
+            5 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or6_5)
+            else -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or6_6)
+        }
+    }
+
+    private fun getOrTwelveRollImage(number: Int): Drawable? {
+        return when (number) {
+            1 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_1)
+            2 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_2)
+            3 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_3)
+            4 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_4)
+            5 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_5)
+            6 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_6)
+            7 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_7)
+            8 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_8)
+            9 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_9)
+            10 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_10)
+            11 -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_11)
+            else -> AppCompatResources.getDrawable(app.applicationContext, R.drawable.or12_12)
         }
     }
 
